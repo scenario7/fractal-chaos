@@ -14,7 +14,7 @@ const About = () => {
       className="flex flex-col items-start justify-between min-h-screen bg-cover bg-center"
       style={{ backgroundImage: `url(${about.src})` }}
     >
-      <NavBar white />
+      <NavBar white whiteLogo/>
       <div className="flex flex-col items-start gap-10 w-1/2 px-20">
         <div className="collapse collapse-arrow bg-transparent">
           <input type="radio" name="my-accordion-2" defaultChecked />

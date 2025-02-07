@@ -14,7 +14,7 @@ const Contact = () => {
       className="flex flex-col items-center justify-between min-h-screen bg-cover bg-center"
       style={{ backgroundImage: `url(${contact.src})` }}
     >
-      <NavBar white />
+      <NavBar white whiteLogo/>
       <div className="flex flex-col gap-7 items-start w-full px-20">
         <div className="flex flex-col gap-3 w-1/4">
           <h1

@@ -69,7 +69,7 @@ const People = () => {
       className="flex flex-col items-center justify-between min-h-screen bg-cover bg-center"
       style={{ backgroundImage: `url(${people.src})` }}
     >
-      <NavBar />
+      <NavBar whiteLogo/>
       <div className="px-20 flex justify-between w-full">
         <div className="flex flex-col gap-5 items-start w-full">
           {peopleList.map((person, index) => {
