@@ -55,7 +55,7 @@ const PostPage = () => {
 
   return (
     <div className="flex flex-col items-center justify-between min-h-screen bg-cover bg-center bg-stone-900">
-      <NavBar white />
+      <NavBar white whiteLogo/>
 
       <div className="py-10 text-white w-full flex items-center justify-between">
         {loading ? (
@@ -65,8 +65,8 @@ const PostPage = () => {
           <div className="rounded-md px-20">
             <h2 className={`text-3xl font-bold ${dmsans.className}`}>{post.title}</h2>
             <p className="text-gray-400">{new Date(post.date).toLocaleDateString()}</p>
-            <div className="mt-4" dangerouslySetInnerHTML={{ __html: post.content }} />
-          </div>
+            <div className="mt-4 formatted-content" dangerouslySetInnerHTML={{ __html: post.content }} />
+            </div>
         ) : (
           <p>No post found.</p>
         )}

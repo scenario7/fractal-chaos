@@ -70,7 +70,7 @@ const Work = () => {
           <div className="flex justify-between px-20">
             <div className="flex flex-col gap-2 items-start">
               {posts.map((post) => (
-                <a href={`/archive/${post.id}`} key={post.id} className=" border-gray-300 rounded-md">
+                <a href={`/archive/${post.id}`} key={post.id} className="border-gray-300 rounded-md">
                   <h2
                     className={`text-xl font-medium tracking-tighter ${dmsans.className}`}
                   >
